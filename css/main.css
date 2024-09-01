@@ -1,0 +1,170 @@
+@charset "UTF-8";
+/*definir los colores que más vamos a utilizar*/
+/*definir la familia de la fuente*/
+/*definir el tamaño de las fonts*/
+/*definir el tamaño de las letras*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: hsl(0, 0%, 100%);
+  font-family: "Montserrat", sans-serif;
+  color: hsl(35, 100%, 62%);
+  font-size: 4rem;
+  font-weight: 300;
+}
+
+h1 {
+  font-family: "Labor Union", sans-serif;
+  font-size: 5.625rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+}
+
+h3 {
+  font-family: "Nickainley", sans-serif;
+  font-size: 4rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+.logo {
+  display: table;
+  margin: auto;
+}
+
+.header-section {
+  background: url(../img/top-rocks.jpg) no-repeat;
+  background-size: cover;
+  padding-bottom: 6rem;
+}
+
+.hike-more-section {
+  background: url(..img/mountains.png) no-repeat;
+  padding-top: 12rem;
+}
+
+.memorable-section {
+  background-color: hsl(35, 100%, 62%);
+  padding-bottom: 5rem;
+}
+
+.top-nav {
+  display: flex;
+  list-style-type: none;
+  align-items: start;
+  gap: 2rem;
+  margin-left: 5rem;
+}
+
+.nav-list-item {
+  display: flex;
+}
+
+.nav-list-item {
+  color: hsl(0, 0%, 100%);
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.columns-container {
+  display: grid;
+  margin: 2rem auto;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.text-white {
+  color: hsl(0, 0%, 100%);
+}
+
+.text-dark {
+  color: hsl(218, 13%, 17%);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.quotes-container {
+  width: 75%;
+  margin: 21rem auto 0;
+  padding: 1.5rem 1rem;
+}
+
+.quotes.content {
+  font-size: 1.25rem;
+}
+
+.quotes.author {
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.hike-description {
+  font-size: 1.25rem;
+  padding: 2rem 5rem;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  color: hsl(0, 0%, 100%);
+  border-radius: 2rem;
+}
+
+.white-btn {
+  border-color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 100%);
+  border: 0.25rem solid;
+}
+
+.dark-btn {
+  border-color: hsl(218, 13%, 17%);
+  color: hsl(218, 13%, 17%);
+  border: 0.25rem solid;
+}
+
+.bg-yellow-50 {
+  background: hsla(35, 100%, 62%, 0.64);
+}
+
+.top-splash {
+  width: 100%;
+  margin-top: -3rem;
+}
+
+.memorable-description {
+  background: url(../img/black-box-sm.png) no-repeat;
+  background-size: cover;
+  width: 50%;
+  font-size: 1.25rem;
+  margin-top: 0 auto;
+  padding: 4rem 10rem;
+}
+
+.level-tittle {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+main-level {
+  font-size: 2.5rem;
+  font-weight: 300;
+  border-bottom: 0.1rem solid hsl(218, 13%, 17%);
+  padding-bottom: 1rem;
+}
+
+.level-description {
+  font-size: 1.25rem;
+  text-align: left;
+}
+
+/*# sourceMappingURL=main.css.map */
