@@ -1,0 +1,10 @@
+@use "../abstracts/variables" as *;
+
+.card{
+    position: relative;
+    border: .35rem solid $clr-main;
+    border-radius: 3rem;
+    display: grid;
+    max-width: fit-content;
+    margin-top: 5rem;
+}

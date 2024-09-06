@@ -5,11 +5,34 @@
 }
 
 body {
-  background: hsl(0, 0%, 100%);
   font-family: "Montserrat", sans-serif;
-  color: hsl(35, 100%, 62%);
   font-size: 4rem;
   font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+p, li, caption {
+  text-wrap: pretty;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+.relative {
+  position: relative;
+}
+
+.w70 {
+  width: 70%;
+}
+
+.auto {
+  margin: auto;
 }
 
 h1 {
@@ -21,68 +44,7 @@ h1 {
 h3 {
   font-family: "Nickainley", sans-serif;
   font-size: 4rem;
-  margin-top: 0.5rem;
-}
-
-.logo {
-  display: table;
-  margin: auto;
-}
-
-.header-section {
-  background: url(../img/top-rocks.jpg) no-repeat;
-  background-size: cover;
-  padding-bottom: 6rem;
-}
-
-.hike-more-section {
-  background: url(../img/mountains.png) no-repeat top;
-  padding-top: 16rem;
-}
-
-.memorable-section {
-  background: hsl(35, 100%, 62%);
-  padding-bottom: 5rem;
-}
-
-.level-section {
-  background: url(../img/hiking.jpg) no-repeat;
-  background-size: cover;
-  padding-bottom: 40rem;
-  padding-top: 5rem;
-}
-
-.map-section {
-  background: url(../img/map.jpg) no-repeat;
-  background-size: cover;
-  padding-bottom: 6rem;
-  padding-top: 3rem;
-}
-
-.top-nav {
-  display: flex;
-  list-style-type: none;
-  align-items: start;
-  gap: 2rem;
-  margin-left: 5rem;
-}
-
-.nav-list-item {
-  display: flex;
-}
-
-.nav-list-link {
-  color: hsl(0, 0%, 100%);
-  font-size: 1rem;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.columns-container {
-  display: grid;
-  margin: 2rem auto;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1.5rem;
+  padding-top: 1rem;
 }
 
 .text-white {
@@ -97,10 +59,8 @@ h3 {
   text-align: center;
 }
 
-.quotes-container {
-  width: 75%;
-  margin: 21rem auto 0;
-  padding: 1.5rem 1rem;
+.text-left {
+  text-align: left;
 }
 
 .quotes-content {
@@ -116,6 +76,122 @@ h3 {
   font-size: 1.25rem;
   font-weight: 600;
   padding: 2rem 5rem;
+}
+
+.level-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.main-level {
+  font-size: 2.5rem;
+  font-weight: 300;
+  border-bottom: 0.1rem solid hsl(218, 13%, 17%);
+  padding-bottom: 1rem;
+}
+
+.level-description {
+  padding-top: 1rem;
+  font-size: 1.25rem;
+  text-align: left;
+}
+
+.map-description {
+  padding: 3rem 30rem 0;
+  font-size: 1.25rem;
+  text-shadow: 0.25rem 0.25rem 0.25rem hsl(218, 13%, 17%);
+}
+
+.journey {
+  font-weight: 600;
+}
+
+.journey-description {
+  font-size: 1.25rem;
+  padding: 3rem 25rem;
+}
+
+.card-title {
+  position: absolute;
+  left: 3.5rem;
+  top: -2rem;
+  background: hsl(35, 100%, 62%);
+  font-size: 1.875rem;
+  text-align: center;
+  padding: 0.5rem 1rem;
+}
+
+.card-price {
+  font-size: 1.25rem;
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  background: #ff2a0d;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  bottom: -2.5rem;
+  left: 5rem;
+}
+
+.video-title {
+  font-size: 1.875rem;
+  margin-bottom: 3rem;
+}
+
+.video-description {
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+  padding-right: 36%;
+}
+
+.video-journey {
+  text-align: left;
+  line-height: 3.5rem;
+  /*padding: 8rem 5rem 0;*/
+  width: 10ch;
+}
+
+.findus-description {
+  font-size: 1.875rem;
+  margin-top: 5rem;
+}
+
+.footer-title {
+  font-size: 1.875rem;
+  margin-bottom: 2rem;
+}
+
+.about-description {
+  font-size: 1.25rem;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: hsl(218, 13%, 17%);
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.memorable-title {
+  font-size: 3.75rem;
+}
+
+.fun-title {
+  font-family: "Nickainley", sans-serif;
+  font-size: 5rem;
+}
+
+.fun-subtitle {
+  font-family: "Labor Union", sans-serif;
+  font-size: 7.5rem;
+}
+
+.gallery-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 3.125rem;
+  margin-bottom: 5rem;
 }
 
 .btn {
@@ -140,40 +216,106 @@ h3 {
   border: 0.1rem solid;
 }
 
-.bg-yellow-50 {
+.yellow-btn {
+  border: none;
+  border-radius: 0;
+  background: hsl(35, 100%, 62%);
+  color: hsl(218, 13%, 17%);
+}
+
+.solid-btn {
+  border: none;
+  border-radius: 0;
+  background: hsl(0, 0%, 100%);
+  color: hsl(218, 13%, 17%);
+}
+
+.search-btn {
+  position: relative;
+  left: 3rem;
+  border: none;
+  background: url(../../img/search.png) no-repeat;
+  width: 22px;
+  height: 22px;
+  text-indent: 100%;
+  cursor: pointer;
+}
+
+.card {
+  position: relative;
+  border: 0.35rem solid hsl(0, 0%, 100%);
+  border-radius: 3rem;
+  display: grid;
+  max-width: fit-content;
+  margin-top: 5rem;
+}
+
+.logo {
+  display: table;
+  margin: auto;
+}
+
+.header-section {
+  background: url(../img/top-rocks.jpg) no-repeat;
+  background-size: cover;
+  padding-top: 2rem;
+  padding-bottom: 6rem;
+}
+
+.top-nav {
+  display: flex;
+  list-style-type: none;
+  align-items: start;
+  gap: 2rem;
+  margin-left: 5rem;
+}
+
+.nav-list-item {
+  display: flex;
+  border-radius: 0.5rem;
+  padding: 0.25rem 0.5rem;
+}
+
+.nav-list-item:hover {
+  background: hsl(220, 5%, 36%);
+}
+
+.nav-list-link {
+  color: hsl(0, 0%, 100%);
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.columns-container {
+  display: grid;
+  /*margin: 2rem auto;*/
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 1.5rem;
+}
+
+.quotes-container {
+  width: 75%;
+  margin: 21rem auto 0;
+  padding: 1.5rem 1rem;
+}
+
+.quotes-container::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background: hsla(35, 100%, 62%, 0.64);
+  mix-blend-mode: multiply;
 }
 
 .top-splash {
   width: 100%;
-  margin-top: -3rem;
-}
-
-.memorable-description {
-  background: url(../img/black-box-sm.png) no-repeat;
-  background-size: cover;
-  width: 50%;
-  font-size: 1.25rem;
-  margin: 0 auto;
-  padding: 4rem 10rem;
-}
-
-.level-title {
-  font-size: 2.5rem;
-  font-weight: 700;
-}
-
-.main-level {
-  font-size: 3.125rem;
-  font-weight: 300;
-  border-bottom: 0.1rem solid hsl(218, 13%, 17%);
-  padding-bottom: 1rem;
-}
-
-.level-description {
-  padding-top: 1rem;
-  font-size: 1.25rem;
-  text-align: left;
+  margin-top: -6rem;
+  margin-bottom: 3rem;
 }
 
 .map {
@@ -181,20 +323,9 @@ h3 {
   margin: auto;
   border: 0.2rem solid hsl(35, 100%, 62%);
   height: 30rem;
-}
-
-.map-description {
-  padding: 3rem 30rem 0;
-  font-size: 1.25rem;
-}
-
-.journey {
-  font-weight: 600;
-}
-
-.journey-description {
-  font-size: 1.25rem;
-  padding: 3rem 25rem;
+  display: grid;
+  align-items: center;
+  text-align: left;
 }
 
 .journey-list {
@@ -208,87 +339,8 @@ h3 {
   gap: 5rem;
 }
 
-.card {
-  position: relative;
-  border: 0.35rem solid hsl(0, 0%, 100%);
-  border-radius: 3rem;
-  display: grid;
-  max-width: fit-content;
-}
-
-.card-title {
-  position: absolute;
-  left: 3.5rem;
-  top: -2rem;
-  background: hsl(35, 100%, 62%);
-  font-size: 1.875rem;
-  text-align: center;
-  padding: 0.5rem 1rem;
-}
-
 .card-img {
   padding: 0.4rem;
-}
-
-.card-price {
-  font-size: 1.25rem;
-  color: hsl(0, 0%, 100%);
-  font-weight: 700;
-  background: #ff2a0d;
-  padding: 0.5rem 1rem;
-  position: absolute;
-  bottom: -2.75rem;
-  left: 5rem;
-}
-
-.fun-section {
-  background: url(../img/routes.jpg) center no-repeat;
-  background-size: cover;
-  padding-bottom: 6rem;
-  padding-top: 3rem;
-}
-
-.video-section {
-  background: url(../img/yellow-trees.png) #e1e1e1 center no-repeat;
-  background-size: cover;
-  padding-bottom: 6rem;
-  padding-top: 3rem;
-}
-
-.video-placeholder {
-  width: 100%;
-}
-
-.video-title {
-  font-size: 1.875rem;
-  text-align: left;
-  padding-left: 14.5rem;
-}
-
-.video-description {
-  font-size: 1rem;
-}
-
-.w70 {
-  width: 70%;
-}
-
-.yellow-btn {
-  border: none;
-  border-radius: 0;
-  background: hsl(35, 100%, 62%);
-  color: hsl(218, 13%, 17%);
-}
-
-.video-journey {
-  text-align: left;
-  line-height: 3.5rem;
-  padding: 8rem 5rem 0;
-}
-
-.gallery-section {
-  background: url(../img/bottom-trees.png) hsl(35, 100%, 62%) center no-repeat;
-  background-size: cover;
 }
 
 .gallery {
@@ -298,11 +350,101 @@ h3 {
   margin: auto;
 }
 
-.solid-btn {
+.gallery-img {
+  width: 100%;
+}
+
+.video-placeholder {
+  width: 100%;
+}
+
+.footer-list {
+  list-style-type: none;
+}
+
+.footer-list-item {
+  display: flex;
+  justify-content: space-around;
+}
+
+.memorable-description {
+  background: url(../img/black-box-sm.png) center no-repeat;
+  background-size: contain;
+  width: 40%;
+  font-size: 1.25rem;
+  margin: 0 auto;
+  padding: 3rem 6rem;
+}
+
+.search-map {
+  line-height: 0;
+  margin-left: 5rem;
+}
+
+.search-field {
+  background: hsl(35, 100%, 62%);
   border: none;
-  border-radius: 0;
-  background: hsl(0, 0%, 100%);
-  color: hsl(218, 13%, 17%);
+  padding: 0.5rem 2.5rem;
+  width: 30%;
+  border-radius: 1rem;
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+}
+
+.search-field::placeholder {
+  color: hsl(0, 0%, 100%);
+}
+
+.footer-content {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  width: 85%;
+}
+
+.hike-more-section {
+  background: url(../img/mountains.png) no-repeat top;
+  padding-top: 16rem;
+}
+
+.memorable-section {
+  background: hsl(35, 100%, 62%);
+  padding-bottom: 5rem;
+  padding-top: 3rem;
+}
+
+.level-section {
+  background: url(../img/hiking.jpg) no-repeat;
+  background-size: cover;
+  padding-bottom: 40rem;
+  padding-top: 5rem;
+}
+
+.map-section {
+  background: url(../img/map.jpg) no-repeat;
+  background-size: cover;
+  padding-bottom: 6rem;
+  padding-top: 3rem;
+}
+
+.fun-section {
+  background: url(../img/routes.jpg) center no-repeat;
+  background-size: cover;
+  padding-bottom: 12rem;
+  padding-top: 5rem;
+}
+
+.video-section {
+  background: url(../img/yellow-trees.png) hsl(0, 0%, 88%) 0 5rem no-repeat;
+  background-size: cover;
+  padding-bottom: 2rem;
+  padding-top: 8rem;
+}
+
+.gallery-section {
+  background: url(../img/bottom-trees.png) hsl(35, 100%, 62%) center no-repeat;
+  background-size: cover;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .findus-section {
@@ -311,12 +453,24 @@ h3 {
   padding-top: 3rem;
 }
 
-.findus-description {
-  font-size: 1.875rem;
+.journey-section {
+  display: grid;
+  align-items: center;
+  justify-content: right;
 }
 
-.footer-list {
-  list-style-type: none;
+#box {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
 }
 
 /*# sourceMappingURL=main.css.map */

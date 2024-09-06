@@ -1,0 +1,59 @@
+@use "../abstracts/variables" as *;
+
+.hike-more-section{
+    background: url(../img/mountains.png) no-repeat top;
+    padding-top: 16rem;
+}
+
+.memorable-section{
+    background: $clr-yellow;
+    padding-bottom: 5rem;
+    padding-top: 3rem;
+}
+
+.level-section{
+    background: url(../img/hiking.jpg) no-repeat;
+    background-size: cover;
+    padding-bottom: 40rem;
+    padding-top: 5rem;
+}
+
+.map-section{
+    background: url(../img/map.jpg) no-repeat;
+    background-size: cover;
+    padding-bottom: 6rem;
+    padding-top: 3rem;
+}
+
+.fun-section{
+    background: url(../img/routes.jpg) center no-repeat;
+    background-size: cover;
+    padding-bottom: 12rem;
+    padding-top: 5rem;
+}
+
+.video-section{
+    background: url(../img/yellow-trees.png) $clr-main-90 0 5rem no-repeat;
+    background-size: cover;
+    padding-bottom: 2rem;
+    padding-top: 8rem;
+}
+
+.gallery-section{
+    background: url(../img/bottom-trees.png) $clr-yellow center no-repeat;
+    background-size: cover;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.findus-section {
+    background: $clr-dark;
+    padding-bottom: 6rem;
+    padding-top: 3rem;
+}
+
+.journey-section{
+    display: grid;
+    align-items: center;
+    justify-content: right;
+}

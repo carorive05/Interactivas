@@ -1,0 +1,159 @@
+@use "../abstracts/variables" as *;
+
+h1{
+    font-family: $ff-title;
+    font-size: $fs-gt;
+    line-height: 1.5rem;
+}
+
+h3{
+    font-family: $ff-script;
+    font-size: $fs-xl;
+    padding-top: 1rem;
+}
+
+.text-white{
+    color: $clr-main;
+}
+
+.text-dark{
+    color: $clr-dark;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.quotes-content{
+    font-size: $fs-xnm;
+}
+
+.quotes-author{
+    font-size: $fs-nm;
+    font-family: $ff-title;
+}
+
+.hike-description{
+    font-size: $fs-xnm;
+    font-weight: $fw-semibold;
+    padding: 2rem 5rem;
+}
+
+.level-title{
+    font-size: $fs-xmd;
+    font-weight: $fw-bold;
+    margin-bottom: 2rem;
+}
+
+.main-level{
+    font-size: $fs-xmd;
+    font-weight: $fw-light;
+    border-bottom: .1rem solid $clr-dark;
+    padding-bottom: 1rem;
+}
+
+.level-description{
+    padding-top: 1rem;
+    font-size: $fs-xnm;
+    text-align: left;
+}
+
+.map-description{
+    padding: 3rem 30rem 0;
+    font-size: $fs-xnm;
+    text-shadow: .25rem .25rem .25rem $clr-dark;
+}
+
+.journey{
+    font-weight: $fw-semibold;
+}
+
+.journey-description{
+    font-size: $fs-xnm;
+    padding: 3rem 25rem;
+}
+
+.card-title{
+    position: absolute;
+    left: 3.5rem;
+    top: -2rem;
+    background: $clr-yellow;
+    font-size: $fs-md;
+    text-align: center;
+    padding: .5rem 1rem;
+}
+
+.card-price{
+    font-size: $fs-xnm;
+    color: $clr-main;
+    font-weight: $fw-bold;
+    background: #ff2a0d;
+    padding: .5rem 1rem;
+    position: absolute;
+    bottom: -2.5rem;
+    left: 5rem;
+}
+
+.video-title{
+    font-size: $fs-md;
+    margin-bottom: 3rem;
+}
+
+.video-description{
+    font-size: $fs-nm;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    padding-right: 36%;
+}
+
+.video-journey{
+    text-align: left;
+    line-height: 3.5rem;
+    /*padding: 8rem 5rem 0;*/
+    width: 10ch;
+}
+
+.findus-description{
+    font-size: $fs-md;
+    margin-top: 5rem;
+}
+
+.footer-title{
+    font-size: $fs-md;
+    margin-bottom: 2rem;
+}
+.about-description{
+    font-size: $fs-xnm;
+}
+
+.footer-link{
+    text-decoration: none;
+    color: $clr-dark;
+    font-size: $fs-nm;
+    font-weight: $fw-light;
+}
+
+.memorable-title{
+    font-size: $fs-lg;
+}
+
+.fun-title{
+    font-family: $ff-script;
+    font-size: $fs-xxl;
+}
+
+.fun-subtitle{
+    font-family: $ff-title;
+    font-size: $fs-xgt;
+}
+
+.gallery-title{
+    font-family: $ff-main;
+    font-weight: $fw-bold;
+    font-size: $fs-xxmd;
+    margin-bottom: 5rem;
+}

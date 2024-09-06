@@ -1,0 +1,48 @@
+@use "../abstracts/variables" as *;
+
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    font-size: $fs-nm;
+    font-weight: $fw-semibold;
+    padding: .5rem 1rem;
+    color: $clr-main;
+    border-radius: 2rem;
+}
+
+.white-btn{
+    border-color: $clr-main;
+    color: $clr-main;
+    border: .25rem solid;
+}
+
+.dark-btn{
+    border-color: $clr-dark;
+    color: $clr-dark;
+    border: .1rem solid;
+}
+
+.yellow-btn{
+    border: none;
+    border-radius: 0;
+    background: $clr-yellow;
+    color: $clr-dark;
+}
+
+.solid-btn{
+    border: none;
+    border-radius: 0;
+    background: $clr-main;
+    color: $clr-dark;
+}
+
+.search-btn{
+    position: relative;
+    left: 3rem;
+    border: none;
+    background: url(../../img/search.png) no-repeat;
+    width: 22px;
+    height: 22px;
+    text-indent: 100%;
+    cursor: pointer;
+}
