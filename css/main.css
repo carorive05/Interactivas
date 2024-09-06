@@ -1,8 +1,3 @@
-@charset "UTF-8";
-/*definir los colores que más vamos a utilizar*/
-/*definir la familia de la fuente*/
-/*definir el tamaño de las fonts*/
-/*definir el tamaño de las letras*/
 * {
   margin: 0;
   padding: 0;
@@ -19,15 +14,13 @@ body {
 
 h1 {
   font-family: "Labor Union", sans-serif;
-  font-size: 5.625rem;
-  font-weight: 300;
+  font-size: 6.25rem;
   line-height: 1.5rem;
 }
 
 h3 {
   font-family: "Nickainley", sans-serif;
   font-size: 4rem;
-  font-weight: 600;
   margin-top: 0.5rem;
 }
 
@@ -43,13 +36,27 @@ h3 {
 }
 
 .hike-more-section {
-  background: url(..img/mountains.png) no-repeat;
-  padding-top: 12rem;
+  background: url(../img/mountains.png) no-repeat top;
+  padding-top: 16rem;
 }
 
 .memorable-section {
-  background-color: hsl(35, 100%, 62%);
+  background: hsl(35, 100%, 62%);
   padding-bottom: 5rem;
+}
+
+.level-section {
+  background: url(../img/hiking.jpg) no-repeat;
+  background-size: cover;
+  padding-bottom: 40rem;
+  padding-top: 5rem;
+}
+
+.map-section {
+  background: url(../img/map.jpg) no-repeat;
+  background-size: cover;
+  padding-bottom: 6rem;
+  padding-top: 3rem;
 }
 
 .top-nav {
@@ -64,7 +71,7 @@ h3 {
   display: flex;
 }
 
-.nav-list-item {
+.nav-list-link {
   color: hsl(0, 0%, 100%);
   font-size: 1rem;
   text-decoration: none;
@@ -96,17 +103,18 @@ h3 {
   padding: 1.5rem 1rem;
 }
 
-.quotes.content {
+.quotes-content {
   font-size: 1.25rem;
 }
 
-.quotes.author {
+.quotes-author {
   font-size: 1rem;
-  font-style: italic;
+  font-family: "Labor Union", sans-serif;
 }
 
 .hike-description {
   font-size: 1.25rem;
+  font-weight: 600;
   padding: 2rem 5rem;
 }
 
@@ -129,7 +137,7 @@ h3 {
 .dark-btn {
   border-color: hsl(218, 13%, 17%);
   color: hsl(218, 13%, 17%);
-  border: 0.25rem solid;
+  border: 0.1rem solid;
 }
 
 .bg-yellow-50 {
@@ -146,25 +154,169 @@ h3 {
   background-size: cover;
   width: 50%;
   font-size: 1.25rem;
-  margin-top: 0 auto;
+  margin: 0 auto;
   padding: 4rem 10rem;
 }
 
-.level-tittle {
+.level-title {
   font-size: 2.5rem;
   font-weight: 700;
 }
 
-main-level {
-  font-size: 2.5rem;
+.main-level {
+  font-size: 3.125rem;
   font-weight: 300;
   border-bottom: 0.1rem solid hsl(218, 13%, 17%);
   padding-bottom: 1rem;
 }
 
 .level-description {
+  padding-top: 1rem;
   font-size: 1.25rem;
   text-align: left;
+}
+
+.map {
+  width: 90%;
+  margin: auto;
+  border: 0.2rem solid hsl(35, 100%, 62%);
+  height: 30rem;
+}
+
+.map-description {
+  padding: 3rem 30rem 0;
+  font-size: 1.25rem;
+}
+
+.journey {
+  font-weight: 600;
+}
+
+.journey-description {
+  font-size: 1.25rem;
+  padding: 3rem 25rem;
+}
+
+.journey-list {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  font-size: 1.875rem;
+  font-weight: 600;
+  list-style-type: none;
+  align-items: start;
+  gap: 5rem;
+}
+
+.card {
+  position: relative;
+  border: 0.35rem solid hsl(0, 0%, 100%);
+  border-radius: 3rem;
+  display: grid;
+  max-width: fit-content;
+}
+
+.card-title {
+  position: absolute;
+  left: 3.5rem;
+  top: -2rem;
+  background: hsl(35, 100%, 62%);
+  font-size: 1.875rem;
+  text-align: center;
+  padding: 0.5rem 1rem;
+}
+
+.card-img {
+  padding: 0.4rem;
+}
+
+.card-price {
+  font-size: 1.25rem;
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  background: #ff2a0d;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  bottom: -2.75rem;
+  left: 5rem;
+}
+
+.fun-section {
+  background: url(../img/routes.jpg) center no-repeat;
+  background-size: cover;
+  padding-bottom: 6rem;
+  padding-top: 3rem;
+}
+
+.video-section {
+  background: url(../img/yellow-trees.png) #e1e1e1 center no-repeat;
+  background-size: cover;
+  padding-bottom: 6rem;
+  padding-top: 3rem;
+}
+
+.video-placeholder {
+  width: 100%;
+}
+
+.video-title {
+  font-size: 1.875rem;
+  text-align: left;
+  padding-left: 14.5rem;
+}
+
+.video-description {
+  font-size: 1rem;
+}
+
+.w70 {
+  width: 70%;
+}
+
+.yellow-btn {
+  border: none;
+  border-radius: 0;
+  background: hsl(35, 100%, 62%);
+  color: hsl(218, 13%, 17%);
+}
+
+.video-journey {
+  text-align: left;
+  line-height: 3.5rem;
+  padding: 8rem 5rem 0;
+}
+
+.gallery-section {
+  background: url(../img/bottom-trees.png) hsl(35, 100%, 62%) center no-repeat;
+  background-size: cover;
+}
+
+.gallery {
+  display: grid;
+  gap: 4rem;
+  grid-template-columns: repeat(3, 1fr);
+  margin: auto;
+}
+
+.solid-btn {
+  border: none;
+  border-radius: 0;
+  background: hsl(0, 0%, 100%);
+  color: hsl(218, 13%, 17%);
+}
+
+.findus-section {
+  background: hsl(218, 13%, 17%);
+  padding-bottom: 6rem;
+  padding-top: 3rem;
+}
+
+.findus-description {
+  font-size: 1.875rem;
+}
+
+.footer-list {
+  list-style-type: none;
 }
 
 /*# sourceMappingURL=main.css.map */
